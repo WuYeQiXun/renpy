@@ -1,0 +1,71 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While processing text tag {size} in '我的世界仿佛变了一番模样：当我看到尖锐的物体时，我似乎感受到身体被刺穿，液体滴滴落下；当我看到驶来的小车时，我不自主地联想到身躯与之相碰撞，失重，飞出；当我看向高楼之下的平地时，我像是转换视角，成为正在远去与贴近的……\n{size=30}（注：这是极度危险的行为！请勿模仿！）{size}'.:
+  File "game/script.rpy", line 775, in script
+    '我的世界仿佛变了一番模样：当我看到尖锐的物体时，我似乎感受到身体被刺穿，液体滴滴落下；当我看到驶来的小车时，我不自主地联想到身躯与之相碰撞，失重，飞出；当我看向高楼之下的平地时，我像是转换视角，成为正在远去与贴近的……\n{size=30}（注：这是极度危险的行为！请勿模仿！）{size}'
+Exception: empty value supplied for tag 'size'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 775, in script
+    '我的世界仿佛变了一番模样：当我看到尖锐的物体时，我似乎感受到身体被刺穿，液体滴滴落下；当我看到驶来的小车时，我不自主地联想到身躯与之相碰撞，失重，飞出；当我看向高楼之下的平地时，我像是转换视角，成为正在远去与贴近的……\n{size=30}（注：这是极度危险的行为！请勿模仿！）{size}'
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\renpy-8.3.7-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "D:\renpy-8.3.7-sdk\renpy\character.py", line 1471, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\renpy-8.3.7-sdk\renpy\character.py", line 1117, in do_display
+    display_say(who,
+  File "D:\renpy-8.3.7-sdk\renpy\character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\renpy-8.3.7-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\renpy-8.3.7-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\renpy-8.3.7-sdk\renpy\display\core.py", line 2882, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\renpy-8.3.7-sdk\renpy\display\core.py", line 1384, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\renpy-8.3.7-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\renpy-8.3.7-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\renpy-8.3.7-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\renpy-8.3.7-sdk\renpy\display\screen.py", line 755, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\renpy-8.3.7-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\renpy-8.3.7-sdk\renpy\display\layout.py", line 1457, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\renpy-8.3.7-sdk\renpy\text\text.py", line 2627, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "D:\renpy-8.3.7-sdk\renpy\text\text.py", line 739, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "D:\renpy-8.3.7-sdk\renpy\text\text.py", line 1415, in segment
+    raise Exception("empty value supplied for tag %r" % tag)
+Exception: empty value supplied for tag 'size'
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.7.25031702
+光斑
+Light Spot 1.1
+Sun Feb 15 13:52:45 2026
