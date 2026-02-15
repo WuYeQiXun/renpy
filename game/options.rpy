@@ -62,7 +62,7 @@ define gui.about = _p("""
 \n第五章：Fresh Air
 \n第六章：Calmant，With Regards
 \n"Anguish", "Calmant", "Decline", "Evening", "Farm", "Fresh Air", "Man Down", "Morning", "Procession of the King", "Thinking of You", "With Regards"
-\nKevin MacLeod (incompetech.com)
+\nKevin MacLeod ({a=https://incompetech.com/music/royalty-free/music.html}incompetech.com{/a})
 \nLicensed under Creative Commons: By Attribution 4.0
 \n{a=http://creativecommons.org/licenses/by/4.0/}http://creativecommons.org/licenses/by/4.0/{/a}
 
